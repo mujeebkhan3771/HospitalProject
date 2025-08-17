@@ -15,7 +15,7 @@ config({ path: "./config.env" });
 app.use(
   cors({
     origin: [
-      "https://hospital-frontend-mmk.netlify.app",
+      "https://hospital-project-mmk.netlify.app",
       "https://admin-dashboard-hospital-project-mmk.netlify.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
