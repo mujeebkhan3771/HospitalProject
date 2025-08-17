@@ -14,14 +14,14 @@ config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO],
+    origin: [
+      "https://hospital-frontend-mmk.netlify.app",
+      "https://admin-dashboard-hospital-project-mmk.netlify.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
-
-app.options("*", cors());  
-
 
 app.use(cookieParser());
 app.use(express.json());
