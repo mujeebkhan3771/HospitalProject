@@ -12,25 +12,13 @@ import appointmentRouter from "./router/appointmentRouter.js";
 const app = express();
 config({ path: "./config.env" });
 
-const allowedOrigins = [process.env.FRONTEND_URL, process.env.DASHBOARD_URL];
-
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      } else {
-        return callback(new Error("Not allowed by CORS"), false);
-      }
-    },
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO],
+    method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
 );
-
-app.options("*", cors());
-
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
