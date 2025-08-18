@@ -84,7 +84,7 @@ Admin Dashboard
 ---
 
 👨‍💻 Author
-Your Name
-Full-Stack Developer | MERN Enthusiast
+Mujeeb Khan
+Full-Stack Developer | Web Developing Enthusiast
 
 📧 Reach me at: mujeebkhan3771@gmail.com
