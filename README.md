@@ -85,6 +85,6 @@ Admin Dashboard
 
 👨‍💻 Author
 Mujeeb Khan
-Full-Stack Developer | Web Developing Enthusiast
+Full-Stack Developer | Web Development Enthusiast
 
 📧 Reach me at: mujeebkhan3771@gmail.com
